@@ -5,12 +5,26 @@ import './Header.css';
 
 const Header = () => {
   const { role, setRole, theme, setTheme } = useDashboard();
+
+  // Common style for aligning icons with text
+  const iconStyle = { 
+    verticalAlign: 'middle', 
+    marginRight: '4px',
+    marginBottom: '2px' 
+  };
+
   return (
     <header className="header">
       <div>
         <h1>Finance Dashboard</h1>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-          {role === 'admin' ? <ShieldCheck size={14} inline /> : <User size={14} inline />} {role.toUpperCase()} MODE
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
+          {/* Removed the "inline" attribute and added iconStyle */}
+          {role === 'admin' ? (
+            <ShieldCheck size={16} style={iconStyle} />
+          ) : (
+            <User size={16} style={iconStyle} />
+          )} 
+          {role.toUpperCase()} MODE
         </p>
       </div>
       <div className="controls">
@@ -25,4 +39,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;
