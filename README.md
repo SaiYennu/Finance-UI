@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Finance Dashboard UI 📈
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, interactive, and responsive finance dashboard built with React.js. This project allows users to track financial activity, visualize spending patterns, and manage transactions based on user roles.
 
-## Available Scripts
+## 🚀 Live Demo
+https://finance-ui-sepia.vercel.app
 
-In the project directory, you can run:
+## 🛠️ Tech Stack
+- **Frontend Framework:** React.js
+- **Styling:** Custom CSS (Modular approach)
+- **Charts:** Recharts
+- **Icons:** Lucide-React
+- **State Management:** React Context API
 
-### `npm start`
+## ✨ Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Dashboard Overview
+- Summary cards for Total Balance, Income, and Expenses.
+- **Time-based visualization:** Line chart showing balance trends.
+- **Categorical visualization:** Pie chart showing spending breakdown.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Transaction Management
+- Comprehensive list of transactions with Date, Category, and Type.
+- **Search & Filtering:** Users can filter by category or transaction type.
+- **Admin Actions:** Admins can add new transactions (simulated logic).
 
-### `npm test`
+### 3. Role-Based Access Control (RBAC)
+- **Admin Role:** Full access to view data and add transactions.
+- **Viewer Role:** Read-only access. Actions like "Add Transaction" are hidden/disabled.
+- Role-switcher toggle included in the header for demonstration purposes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Smart Insights
+- Dynamic insight box that highlights spending trends and balance status based on the current data.
 
-### `npm run build`
+### 5. UI/UX Enhancements
+- **Dark Mode:** Fully functional dark mode toggle for better accessibility.
+- **Responsiveness:** Mobile-first design that adapts from desktops to smartphones.
+- **Empty States:** Graceful handling of "No data found" during searches.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧠 Technical Approach & State Management
+I chose the **React Context API** for state management to ensure a single source of truth for:
+- **Global Data:** Centralized transaction list.
+- **User Role:** Syncing permissions across different components.
+- **Theming:** Handling Dark/Light mode transitions globally.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CSS was split into modular files to prevent style leakage and improve maintainability (Technical Quality).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Installation & Setup
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SaiYennu/Finance-UI.git
