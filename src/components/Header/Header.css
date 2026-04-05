@@ -1,0 +1,4 @@
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+.controls { display: flex; gap: 1rem; align-items: center; }
+.select { padding: 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-main); cursor: pointer; }
+.iconBtn { background: var(--bg-card); border: 1px solid var(--border); padding: 8px; border-radius: 6px; cursor: pointer; color: var(--text-main); display: flex; align-items: center; }

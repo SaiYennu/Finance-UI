@@ -1,0 +1,29 @@
+/* Smooth Theme Transitions */
+.theme-provider-wrapper {
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.4s ease;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Dark Mode transition for specific elements inside context */
+[data-theme='dark'] .theme-provider-wrapper {
+  background-color: var(--bg-primary);
+}
+
+/* Role Transition Effects */
+.role-change-anim {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Focus states for accessibility within the provider */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
