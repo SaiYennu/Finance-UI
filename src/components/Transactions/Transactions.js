@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDashboard } from '../../context/DashboardContext';
-import { Plus, Search } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import './Transactions.css';
 
 const Transactions = () => {
